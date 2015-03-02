@@ -1,6 +1,12 @@
 html {
 	font-size: 62.5%;
 	-webkit-font-smoothing: antialiased !important;	
+	@media #{$tablet} {
+		font-size: 50%;
+	}
+	@media #{$phone} {
+		font-size: 62.5%;
+	}
 }
 html, body {
 	height: 100%;

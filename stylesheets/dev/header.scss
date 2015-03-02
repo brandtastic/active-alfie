@@ -1,6 +1,9 @@
 header {
 	background: $red;
 	@include rems(padding, 0.5, 0);
+	@media #{$phone} {
+		display: none;
+	}
 	a {
 		color: #fff;
 	}

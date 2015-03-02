@@ -7,6 +7,7 @@ input[type=text], input[type=email], textarea {
 	@include font-size(1.8, 2.4);
 	font-family: $regular;
 	background: #fff;
+	border-radius: 0;
 }
 select {
 	@include box;
@@ -41,6 +42,10 @@ input[type=submit] {
 	@include rems(padding, 0.5, 1);
 	@include font-size(1.8, 2.4);
 	cursor: pointer;
+	@include box;
+	@media #{$phone} {
+		width: 100%;
+	}
 	&:hover {
 		background: #ed1c24;
 	}

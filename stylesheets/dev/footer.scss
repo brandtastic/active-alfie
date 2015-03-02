@@ -2,6 +2,9 @@ footer {
 	color: #fff;
 	background: $dblue;
 	@include rems(padding, 2, 0, 7);
+	@media #{$phone} {
+		@include rems(padding, 2, 0);
+	}
 	a {
 		font-family: $bold;
 		color: #fff;
@@ -9,8 +12,14 @@ footer {
 	aside {
 		width: 50%;
 		@include clearfix;
+		@media #{$phone} {
+			width: 100%;
+		}
 		&:nth-child(2) {
 			text-align: right;
+			@media #{$phone} {
+				display: none;
+			}
 		}
 		img {
 			float: left;

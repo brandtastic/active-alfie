@@ -13,7 +13,7 @@
 					<h1><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/large-logo.png" alt="<?php bloginfo('sitename'); ?> | <?php bloginfo('description'); ?>"></h1>
 				</aside>
 				<aside>
-					<a href="#" alt="scroll-trigger"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/holding-signup.png" alt="Activiti Providers - Sign Up For Free"></a>	
+					<a href="#" id="scroll-trigger"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/holding-signup.png" alt="Activiti Providers - Sign Up For Free"></a>	
 				</aside>
 			</section>
 			<section class="container">

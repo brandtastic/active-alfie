@@ -99,4 +99,12 @@ $(document).ready(function() {
 	});
 	
     $('.form select').prepend('<option disabled selected>Activity Type</option>');
+
+    $('#scroll-trigger').click(function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $(".holding-signup").offset().top
+        }, 500);
+    })
+
 });
