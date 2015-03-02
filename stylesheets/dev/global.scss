@@ -1,0 +1,17 @@
+body {
+	background: #fff;
+	font-family: $regular;
+	@include font-size(1.6, 2);
+	color: #848484;
+}
+.page-content {
+	min-height: 100%;
+	position: relative;
+	.footer-fix {
+		@include rems(padding-bottom, 22);
+	}
+}
+.container {
+	@include clearfix;
+	@include rems(max-width, 120);
+}

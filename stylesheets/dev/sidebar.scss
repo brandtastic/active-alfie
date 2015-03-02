@@ -1,0 +1,5 @@
+.sidebar {
+	width: 25%;
+	margin-right: 4%;
+	@include rems(margin-top, 4);
+}

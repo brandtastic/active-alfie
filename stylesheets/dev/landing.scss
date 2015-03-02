@@ -1,0 +1,35 @@
+.landing {
+	&-feature {
+		background-size: cover;
+		.container {
+			display: table;
+			@include rems(height, 40);
+			.vert-fix {
+				@include clearfix;
+				display: table-cell;
+				vertical-align: middle;
+				h2 {
+					float: right;
+					display: block;
+					@include box;
+					@include rems(padding, 2);
+					color: #fff;
+					@include font-size(4.8, 5);
+					text-align: right;
+					max-width: 68%;
+					font-family: $thin;
+					background: $green;
+					background: rgba(152, 208, 178, 0.9);
+				}
+			}
+		}
+	}
+	&-content {
+		@include rems(padding, 4, 0);
+		h2 {
+			color: $green;
+			@include font-size(2, 2.4);
+			@include rems(margin-bottom, 1.5);
+		}
+	}
+}

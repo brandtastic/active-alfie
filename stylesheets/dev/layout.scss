@@ -1,0 +1,10 @@
+.post-list, .post-article {
+	width: 70%;
+	margin-right: 5%;
+}
+.post-sidebar {
+	width: 25%;
+}
+.container {
+	@include clearfix;
+}

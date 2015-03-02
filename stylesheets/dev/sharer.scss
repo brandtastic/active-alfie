@@ -1,0 +1,23 @@
+.sharer {
+	display: block;
+	&.facebook {
+		background: #3b5998;
+	}
+	&.twitter {
+		background: #4099ff;
+	}
+	&.plus {
+		background: #d34836;
+	}
+	a {
+		display: block;
+		color: #fff;
+		@include rems(padding, 0.2, 0.5);
+		text-transform: uppercase;
+		font-family: $novecento;
+		@include font-size(1.4, 1.8);
+		i {
+			@include rems(margin-left, 0.5);
+		}
+	}
+}

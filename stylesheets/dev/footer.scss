@@ -1,0 +1,43 @@
+footer {
+	color: #fff;
+	background: $dblue;
+	@include rems(padding, 2, 0, 7);
+	a {
+		font-family: $bold;
+		color: #fff;
+	}
+	aside {
+		width: 50%;
+		@include clearfix;
+		&:nth-child(2) {
+			text-align: right;
+		}
+		img {
+			float: left;
+			@include rems(margin-right, 4);
+		}
+		h2 {
+			float: left;
+			font-family: $pacifico;
+			@include font-size(2.5, 4);
+			.fa {
+				@include rems(margin-left, 0.5);
+				@include font-size(3, 4);
+				&.fa-envelope {
+					display: none;
+				}
+			}
+		}
+		ul {
+			@include clearfix;
+			float: right;
+			@include rems(margin-bottom, 1);
+			li {
+				float: left;
+			}
+		}
+		p {
+			clear: both;
+		}
+	}
+}

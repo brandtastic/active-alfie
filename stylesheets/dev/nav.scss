@@ -1,0 +1,84 @@
+a {
+	&.mob-nav-trigger {
+		display: none;
+		background: $green;
+		color: #fff;
+		@include rems(padding, 0.5, 1);
+		font-family: $bold;
+		border-left: 3px solid $green;
+		@include box;
+		width: 100%;
+		@include clearfix;
+		&:after {
+			@include icon;
+			float: right;
+			content: "\f0c9";
+		}
+		@media #{$phone} {
+			display: block;
+		}
+	}
+}
+nav {
+	&.mobile-nav {
+		display: none;
+		ul {
+			li {
+				display: block;
+				background: #eee;
+				border-bottom: 1px solid #fff;
+				a {
+					color: $green;
+					display: block;
+					width: 100%;
+					@include rems(padding, 0.5, 1);
+					@include box;
+					border-left: 3px solid #eee;
+					font-family: $bold;
+					&:hover {
+						border-left: 3px solid $green;
+						background: #ddd;
+					}
+				}
+				&.current_page_item {
+					a {
+						border-left: 3px solid $green;
+						background: #ddd;
+					}
+				}
+			}
+		}
+	}
+	header & {
+		ul {
+			@include clearfix;
+			float: right;
+			li {
+				@include font-size(2.4, 8);
+				float: left;
+				@include rems(margin-left, 2);
+				a {
+					color: $green;
+				}
+			}
+		}
+	}
+	footer & {
+		background: $green;
+		width: 100%;
+		@include clearfix;
+		ul {
+			float: left;
+			@include clearfix;
+			li {
+				float: left;
+				@include rems(margin-right, 3);
+				display: block;
+				@include rems(padding, 1, 0);
+				a {
+					color: #fff;
+				}
+			}
+		}
+	}
+}

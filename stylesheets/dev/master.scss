@@ -1,0 +1,43 @@
+/*!
+Theme Name: Alfie Theme
+Theme URI: http://foundationsphysio.com
+Description: Custom developed theme for Active Alfie
+Author: Brandtastic
+Author URI: http://brandtastic.co.uk
+Version: 1.0
+@charset "UTF-8";
+/* CSS Document */
+
+/* Colours */
+
+@import 'colours';
+
+/* Important Stuff */
+
+@import 'mixins';
+@import 'reset';
+@import 'media';
+
+/* Type */
+
+@import 'typography';
+//@import 'iconography';
+
+/* Global */
+
+@import 'global';
+//@import 'nav';
+@import 'form';
+
+/* Elements */
+
+@import 'sharer';
+
+/* Structure */
+
+@import 'header';
+@import 'footer';
+
+/* Page Specifics */
+
+@import 'holding';

@@ -1,0 +1,64 @@
+input[type=text], input[type=email], textarea {
+	@include box;
+	width: 100%;
+	@include rems(padding, 0.5, 1);
+	border: none;
+	-webkit-appearance: none;
+	@include font-size(1.8, 2.4);
+	font-family: $regular;
+	background: #fff;
+}
+select {
+	@include box;
+	width: 100%;
+	border: none;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	@include font-size(1.8, 2.4);
+	@include rems(padding, 0.5, 1);
+	border-radius: 0;
+	background: center right no-repeat url(images/dropdown.png) #fff;
+	option {
+		@include rems(padding-left, 1.5);
+	}
+}
+input[type=submit] {
+	float: right;
+	border: none;
+	border-radius: 0;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	background: #ed1c24; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ed1c24 0%, #af151b 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ed1c24), color-stop(100%,#af151b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ed1c24 0%,#af151b 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ed1c24 0%,#af151b 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ed1c24 0%,#af151b 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ed1c24 0%,#af151b 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed1c24', endColorstr='#af151b',GradientType=0 ); /* IE6-9 */
+	color: #fff;
+	font-family: $bold;
+	@include rems(padding, 0.5, 1);
+	@include font-size(1.8, 2.4);
+	cursor: pointer;
+	&:hover {
+		background: #ed1c24;
+	}
+}
+span.wpcf7-not-valid-tip {	
+	@include rems(padding, 1, 0, 0);
+	font-family: $bold;
+	&:before {
+		@include icon;
+		content: "\f06a";
+		@include font-size(1.8, 2);
+		@include rems(margin-right, 0.5);
+	}
+	.holding-signup & {
+		color: #fff;
+		@include font-size(1.4, 2);
+	}
+}
+.wpcf7-response-output {
+	border: 1px solid #fff!important;
+}
